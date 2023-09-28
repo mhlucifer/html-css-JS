@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //逻辑中断。因为任意数与0相或都是0，所以可以用来判断，如果a为真，就输出a，否则输出b
+        //
+         (function fun(a,b)
+         {
+        a = a || 0;
+        b = b || 0;
+        console.log(a+b);
+    })()
+    </script>
+   
+</body>
+</html>

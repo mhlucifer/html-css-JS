@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let obj1 = new Object();
+        obj1.uname = "张三";
+        obj1.age = 17;
+        obj1.gender = "女";
+
+        let obj = {
+            uname: "张三",
+            age: 17,
+            gender: "女",
+            sum: function (a, b) {
+                return a + b;
+            }
+        };
+        
+
+        document.write(obj.uname); // 使用 . 而不是 ->
+        document.write(obj["gender"]);
+
+        //赋值
+        obj.uname = "李四";
+        obj["age"] = 18;
+        document.write(obj.uname); 
+        document.write(obj["age"]);
+
+        //查看对象中的所有属性
+        for (let key in obj) { // 函数作为对象的属性，称为方法，也会被遍历出来
+            document.write(key + ":" + obj[key] + "<br>");
+            console.log(key) // key 是字符串类型
+            console.log(obj[key]) // obj[key] 是属性值
+        }
+        //增
+        obj.hobby = '足球';
+        document.write(obj["hobby"]);
+        obj.sum();
+
+        //删除
+        delete obj.hobby;
+
+        //
+
+    </script>
+</body>
+</html>

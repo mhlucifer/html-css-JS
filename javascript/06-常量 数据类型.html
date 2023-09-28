@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = 2;
+        //数据类型
+        //
+        //1.数字
+        let num = 1;
+        //2.字符串
+        let str = "hello world";
+        //3.布尔值
+        let bool = true;
+        //4.空值
+        let a = null;
+        //5.未定义
+        let b = undefined;
+        //6.对象
+        let obj = {
+            name:'张三',
+            age:18
+        };
+        //7.数组
+        let arr = [1,2,3,4,5];
+        //nan==nan返回的也是nan
+        //模板字符串
+        let str1 = `hello world`; //反引号
+        document.write(`name: ${str1}`);
+        
+        let a1 = 1;
+        document.write(`我的名字是 ${a1}`);
+        //声明一个变量未赋值，输出的是undefined
+        let b1 = null;
+        document.write(b1);
+        let c = 1;
+        b1 = [[a,b,c],[null,null,null],[null,null,null]];
+        console.log(typeof c);
+        console.log(typeof b1);
+        //number
+        //parseInt
+        //parseDouble
+        console.log(parseInt("asasa"));//NaN
+        console.log(parseInt("123asasa"));//123
+        console.log(parseInt("asasa123"));//NaN，和上面的区别在于，这个是从左到右，遇到非数字就停止
+        
+    </script>
+</body>
+</html>

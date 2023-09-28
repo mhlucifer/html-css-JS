@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [10,20,30,40,50,60,70,80,90,100];
+        for(let i = 0; i < a.length; i++) {
+            if(i == 0)
+            {
+                max = a[i];
+                min = a[i];
+            }
+            else
+            {
+                if(a[i] > max)
+                {
+                    max = a[i];
+                }
+                if(a[i] < min)
+                {
+                    min = a[i];
+                }
+            }
+            
+        }
+        console.log(`最大值 ${max},最小值 ${min}`);
+        
+        
+    </script>
+</body>
+</html>

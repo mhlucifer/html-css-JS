@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //数组的查
+        let arr = [];
+        console.log(arr[0]);
+        console.log(arr.length);
+        //数组赋值
+        arr[0] = 1;
+        console.log(arr[0]);
+        let arr1 = ["pink","red","blue"];
+        arr1[0] = "red";
+        console.log(arr1);//可以直接打印数组
+        //给所有数组后面加个老师
+        for(let i = 0;i<arr1.length;i++)
+        {
+            arr1[i] = arr1[i] + "老师";
+        }
+        console.log(arr1);//可以直接打印数组s
+        //数组增加数据
+        arr1.push("green");//在数组后面加一个元素
+        console.log(arr1);//可以直接打印数组s
+        arr1.unshift("yellow");//在数组前面加一个元素
+        console.log(arr1.unshift("yellow"));//可以直接打印数组,返回数组的长度
+        //数组筛选
+        let arr2 = [1,2,3,4,5,6,7,8,9,10];
+        let arr3 = [];
+        for(let i = 0;i<arr2.length;i++)
+        {
+            if(arr2[i]%2 == 0)
+            {
+                arr3.push(arr2[i]);
+            }
+        }
+        console.log(arr3)
+        //数组删除
+        let arr4 = [1,2,3,4,5,6,7,8,9,10];
+        arr4.pop();//删除数组最后一个元素
+        console.log(arr4);
+        arr4.shift();//删除数组第一个元素
+        console.log(arr4);
+        arr4.splice(2,3);//删除索引开始的数字
+        console.log(arr4);
+
+        //升序和降序
+        let arr5 = [1,4,5,2,6,7,1,2,9,10]
+        console.log(typeof arr5);
+        arr5.sort(function(a,b) {
+            return b -a ;//a代表前一个元素，b代表后一个元素
+        });
+        console.log(arr5);
+    </script>
+</body>
+</html>
