@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div span是后代选择器 div>span是儿子选择器 */
+        div > span
+        {
+            color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 复合选择器是由两个或者多个基础选择器 -->
+    <!-- 后代选择器 -->
+    <!-- 父选择器 子选择器{css属性},父子用空格隔开 -->
+    <!-- 后代选择器,选中所有后代,包含儿子,孙子,重孙子 -->
+    <span>标签</span>
+    <div>
+        <span>div span</span>
+        <p><span>
+            孙子标签
+        </span></p>
+    </div>
+</body>
+</html>
